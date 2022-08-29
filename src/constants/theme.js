@@ -9,7 +9,7 @@ export const COLORS = {
   txtColor1:'#414141',
   txtColor2:'#A1A1BC',
   txtColor3:'#212121',
-  boderColor:'#D0D0D0',
+  borderColor:'#D0D0D0',
   drawerColor:'#DAEEFF',
 
 }

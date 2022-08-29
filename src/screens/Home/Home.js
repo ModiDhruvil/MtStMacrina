@@ -6,14 +6,15 @@ import { ICONS, COLORS } from '../../constants';
 import Reflection from '../Reflections/Reflection';
 import Pilgrimage from '../Pilgrimage/Pilgrimage';
 import News from '../News/News';
-import Donate from '../Donate/Donate';
 
 export default function Home({ navigation }) {
+
+
+
 
     return (
         <Tab.Navigator
             initialRouteName="Reflections"
-
             screenOptions={{
                 tabBarHideOnKeyboard: true,
                 headerShown: false,
@@ -22,14 +23,14 @@ export default function Home({ navigation }) {
                 tabBarActiveTintColor: COLORS.active_tab,
                 tabBarInactiveTintColor: COLORS.inactive_tab,
                 tabBarStyle: {
-                    height:65,
-                    backgroundColor:COLORS.app_color,
-                    paddingBottom:5,
-                    paddingTop:5,
-                    borderTopLeftRadius:20,
+                    height: 65,
+                    backgroundColor: COLORS.app_color,
+                    paddingBottom: 5,
+                    paddingTop: 5,
+                    borderTopLeftRadius: 20,
                     borderTopRightRadius: 20,
                 }
-               
+
             }}
 
         >
@@ -38,6 +39,7 @@ export default function Home({ navigation }) {
                 name="Reflections"
                 options={{
                     tabBarLabel: 'Reflections',
+                    unmountOnBlur:true,
                     tabBarIcon: ({ color }) => (
                         <Image
                             source={ICONS.reflaction}
@@ -52,7 +54,8 @@ export default function Home({ navigation }) {
             <Tab.Screen
                 name="Pilgrimage"
                 options={{
-                    tabBarLabel: 'Pilgrimage',
+                    tabBarLabel: 'Calendar',
+                    unmountOnBlur:true,
                     tabBarIcon: ({ color }) => (
                         <Image
                             source={ICONS.pilgrimage}
@@ -67,6 +70,7 @@ export default function Home({ navigation }) {
                 name="News"
                 options={{
                     tabBarLabel: 'News',
+                    unmountOnBlur:true,
                     tabBarIcon: ({ color }) => (
                         <Image
                             tintColor={color}
@@ -78,10 +82,11 @@ export default function Home({ navigation }) {
                 component={News} />
 
 
-            <Tab.Screen
+            {/* <Tab.Screen
                 name="Donate Tab"
                 options={{
                     tabBarLabel: 'Donate',
+                    unmountOnBlur:true,
                     tabBarIcon: ({ color }) => (
                         <Image
                             tintColor={color}
@@ -89,11 +94,10 @@ export default function Home({ navigation }) {
                             style={{ height: 30, width: 30, resizeMode: 'contain', tintColor: color }}
                         />
                     )
-                }}
-                component={Donate} />
-
-
-
+            
+                }}  
+                  component={Donate}            
+             /> */}
         </Tab.Navigator>
     )
 }

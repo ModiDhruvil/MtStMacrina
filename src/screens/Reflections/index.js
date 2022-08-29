@@ -6,15 +6,16 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor:COLORS.app_bg
     },
-    childConatiner:{
-        backgroundColor:COLORS.inactive_tab,
+    childContainer:{
+        backgroundColor:COLORS.app_color,
         margin:10,
+        padding:8,
         alignItems:'center',
         marginTop:20,
         borderRadius:10,
     },
-    txtLable:{
-        color:COLORS.txtColor,
+    txtLabel:{
+        color:COLORS.white,
         fontSize:22,
         fontWeight:'500',
         margin:10
@@ -33,6 +34,15 @@ const styles = StyleSheet.create({
         fontWeight:'400',
         padding:10
       
+    },
+    loading: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
 

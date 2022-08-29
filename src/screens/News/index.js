@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     newsList:{
         flexDirection:'column',
         margin:10,
+        padding:10,
         backgroundColor:COLORS.inactive_tab,
         borderRadius:10,
     },
@@ -28,6 +29,15 @@ const styles = StyleSheet.create({
         fontSize:14,
         fontWeight:'300',
         padding:5   
+    },
+    loading: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        alignItems: 'center',
+        justifyContent: 'center'
     }
   
 })

@@ -5,13 +5,13 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         backgroundColor:COLORS.app_bg,
-        margin:10
+        margin:5
     },
     childContainer:{
          backgroundColor:COLORS.inactive_tab,
          borderRadius:8,
          flexDirection:'column',
-         padding:14
+         padding:10
     },
     txtHeader:{
         color:COLORS.txtColor,
@@ -41,7 +41,9 @@ const styles = StyleSheet.create({
         borderWidth:1,
         marginTop:10,
         borderRadius:5,
-        borderColor:COLORS.boderColor
+        padding:8,
+        color:COLORS.black,
+        borderColor:COLORS.borderColor
     },
     txtInputHalf:{
         flex:0.5,
@@ -51,7 +53,9 @@ const styles = StyleSheet.create({
         borderRadius:5,
         marginEnd:10,
         paddingStart:5,
-        borderColor:COLORS.boderColor
+        padding:8,
+        color:COLORS.black,
+        borderColor:COLORS.borderColor
     },
     txtMailingList:{
         color:COLORS.txtColor2,
@@ -65,10 +69,11 @@ const styles = StyleSheet.create({
         borderRadius:8,
         fontWeight:'800',
         color:COLORS.white,
-        padding:8,
+        padding:12,
         textAlign:'center',
         marginTop:20,
-        marginBottom:15
+        marginBottom:15,
+        overflow: 'hidden'
     }
   
 })
